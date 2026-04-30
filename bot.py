@@ -6,7 +6,7 @@ import google.auth.transport.requests
 from google.oauth2 import service_account
 
 # Discord bot token
-DISCORD_BOT_TOKEN = "MTQ5NjI0Mjg0OTg3NDg0MTYzMA.G_1ai7.ucX7THFSKdC80EsQiTAoAv2623XD0rybZc-MYU"
+DISCORD_BOT_TOKEN = "MTQ5NjI0Mjg0OTg3NDg0MTYzMA.GeoHIn.akOoLfoTawubQo9-kK8llzGzy7a3dd_hp-OhiY"
 DISCORD_CHANNEL_ID = 1496248008961032367
 
 # FCM
