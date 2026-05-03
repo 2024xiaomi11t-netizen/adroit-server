@@ -4,10 +4,7 @@ import httpx
 import json
 import google.auth.transport.requests
 from google.oauth2 import service_account
-import discord
 
-intents = discord.Intents.default()
-intents.message_content = True
 # Discord bot token
 DISCORD_BOT_TOKEN = "MTQ5NjI0Mjg0OTg3NDg0MTYzMA.GdmsJg.HNL3V7NJUW9KDGZA8RUmf3UqgfuX066vrhnW3E"
 DISCORD_CHANNEL_ID = 1496248008961032367
@@ -42,17 +39,15 @@ async def send_fcm_notification():
 
     async with httpx.AsyncClient() as client:
         response = await client.post(url, headers=headers, json=payload)
-        print(f"FCM cavab: {response.status_code} - {response.text}")
+        print(f"FCM cavab: {response.status_code}")
 
 intents = discord.Intents.default()
 intents.message_content = True
 client = discord.Client(intents=intents)
-intents = discord.Intents.default()
-intents.message_content = True
-client = discord.Client(intents=intents)
+
 @client.event
 async def on_ready():
-    print(f"Bot hazırdır: {client.user}")
+    print(f"✅ Bot hazırdır: {client.user}")
 
 @client.event
 async def on_message(message):
