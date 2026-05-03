@@ -11,7 +11,7 @@ DISCORD_CHANNEL_ID = 1496248008961032367
 
 # FCM
 FCM_TOKEN = "eFFdIA2dSve6ziGLzOr5IP:APA91bG1u8d2xjDmAWasIceGHhaEDo1jeWwR47BHssNKsyCtSs5eVHbeJjKuxC7piM3RuhR-9XLbKbzWc415PKy2oN5U3Zk_ARk5Tz0py8lJid_KZdxJywI"
-SERVICE_ACCOUNT_FILE = "service-account.json"
+SERVICE_ACCOUNT_FILE = "./service-account.json"
 PROJECT_ID = "evlad-8a004"
 
 async def send_fcm_notification():
